@@ -1,0 +1,11 @@
+var num = parseInt(prompt("Ingrese un número"));
+
+for (var i = 1; i <= num; i++) {
+	
+	if ((i % 2) == 0) {
+
+		alert("Según el número que ingresó, "+num+". \n"
+			 +"El número "+i+", es par");
+	
+	}
+}

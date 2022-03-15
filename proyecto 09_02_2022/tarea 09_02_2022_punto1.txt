@@ -1,0 +1,31 @@
+var array = [1,2,3,4,5,6];
+
+console.log("Iteración con while: ");
+var conteo = 0;
+while(conteo < array.length){
+	console.log(array[conteo]);
+	conteo++;
+} console.log(" "); //para dar un espacio.
+
+console.log("Iteración con for: ");
+for(let i=0; i < array.length; i++){
+	console.log(array[i]);
+} console.log(" "); //para dar un espacio.
+
+console.log("Elementos del array mas uno: ");
+for(let i=0; i < array.length; i++){
+	console.log((array[i] + 1));
+} console.log(" "); //para dar un espacio.
+
+console.log("Copia del array incrementado con 12: ");
+var copiaArray = [];
+for(let i=0; i < array.length; i++){
+	copiaArray[i] = (array[i] + 12);
+} console.log("Hecho."); 
+console.log(" "); //para dar un espacio.
+
+console.log("Sacando promedio de la copia...");
+var sumaTotal = 0;
+for(let i=0; i < array.length; i++){
+	sumaTotal += copiaArray[i];
+} console.log("El promedio del array copia es: "+(sumaTotal/array.length));

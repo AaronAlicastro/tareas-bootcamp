@@ -1,0 +1,14 @@
+
+var cantidadFibonacci = parseInt(prompt("Ingresa la cantidad de números fibonacci que querés ver: "));
+
+var numAnterior = 0, numPosterior = 1;
+
+for (var i = 0; i < cantidadFibonacci; i++) {
+	let fibonacciActual = numAnterior + numPosterior;
+
+	numAnterior = numPosterior;
+	numPosterior = fibonacciActual;
+
+	console.log(fibonacciActual); // se empieza a imprimir desde la primera poisición del fibonacci (1).
+	
+}

@@ -1,0 +1,22 @@
+
+var cantidadMaxPiramide = parseInt(prompt("Ingresa la altura máxima de la pirámide"));
+
+var numAsteriscos = []; // se crea un array que contendrá los asteriscos.
+numAsteriscos[0] = "*"; // se inicializa con el fin de empezar a llevar la cuenta de las filas.
+
+for (let i = 0; i < cantidadMaxPiramide; i++) { // se recorre el array.
+
+	numAsteriscos[i+1] = numAsteriscos[i];   // se inicializa la posición siguiente para poder llevar la suma.
+	console.log(numAsteriscos[i]); // se imprime
+	numAsteriscos[i+1] += "**"; // se le agregan de dos en dos según lo pedido en el ejemplo.
+}
+
+/*
+ * una vez que haya llegado al tope, se empieza a recorrer el array de reversa para colocar las mismas líneas que se guardaron.
+ * es por ello que la var. i, del siguiente for comienza en el 'lenght - 3'
+ * para que no vuelva a imprimir el tope de la pirámide.
+*/
+for (let i = (numAsteriscos.length - 3); i >= 0; i--) {
+
+	console.log(numAsteriscos[i]);
+}

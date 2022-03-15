@@ -1,0 +1,6 @@
+var temperaturaEnCelcius = parseInt(prompt("Programa para convertir celcius a fahrenheit \n"
+										  +"Ingresa le temperatura en celcius: "));
+
+var temperaturaEnFahrenheit = temperaturaEnCelcius * 1.8 + 32;
+
+alert("la temperatura en fahrenheit es: "+temperaturaEnFahrenheit);

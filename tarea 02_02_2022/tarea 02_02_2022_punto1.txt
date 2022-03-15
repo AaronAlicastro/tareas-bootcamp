@@ -1,0 +1,65 @@
+var num1 = prompt("Programa para hacer operaciones con dos números \n" + "Ingrese el primer número: ");
+var num2 = prompt("Ingrese el segundo: ");
+
+var numero1 = parseInt(num1);
+var numero2 = parseInt(num2);
+
+if (num1==null) {
+	alert("Ha cancelado algun número");
+}else if (num2==null) {
+	alert("Ha cancelado algun número");
+
+}else{
+	var eleccion = prompt("Eliga la operación a efectuar: \n"+ 
+						  "1 - summa. 		2 - resta. 		3 - multiplicación. 	4 - division");
+	var resultado;
+
+	if (eleccion==1) {
+		resultado = numero1 + numero2;
+
+	}else if (eleccion==2) {
+		let tipoResta = prompt("Eliga como quiere la resta: \n" + 
+							   "a = "+numero1+" - "+numero2+". 		b = "+numero2+" - "+numero1);
+		if (tipoResta=="a") {
+			resultado = numero1 - numero2;
+		}else if(tipoResta=="b"){
+			resultado = numero2 - numero1;
+		}else{
+			alert("No ingresó el número correctamente");
+			eleccion = 0;
+		}
+
+	}else if (eleccion==3) {
+		resultado = numero1 * numero2;
+
+	}else if (eleccion==4) {
+		let tipoDivision = prompt("Eliga como quiere la Division: \n" + 
+							   "a = "+numero1+" / "+numero2+". 		b =  "+numero2+" / "+numero1);
+		if (tipoDivision=="a") {
+			if (numero2==0) {
+				alert("La division entre cero es indefinida");
+				eleccion=0;
+			}else{
+				resultado = numero1 / numero2;
+			}
+		}else if(tipoDivision=="b"){
+			if (numero1==0) {
+				alert("La division entre cero es indefinida");
+				eleccion=0;
+			}else{
+				resultado = numero1 / numero2;
+			}
+		}else{
+			alert("No ingresó el número correctamente");
+			eleccion = 0;
+		}
+
+	}else{
+		alert("No ingresó el número correctamente");
+		eleccion = 0;
+	}
+
+	if (eleccion!=0) {
+		alert("El resultado de la operación es: " + resultado);
+	}
+}

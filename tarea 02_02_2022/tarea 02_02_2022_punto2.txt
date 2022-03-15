@@ -1,0 +1,47 @@
+var num1 = prompt("Por favor digite tres números. \n" + "El primero: ");
+var num2 = prompt("El segundo: ");
+var num3 = prompt("El tercero: ");
+
+var numero1 = parseInt(num1);
+var numero2 = parseInt(num2);
+var numero3 = parseInt(num3);
+
+if (numero1 > numero2) {
+	if (numero1 > numero3) {
+		if (numero2 > numero3) {
+			alert("EL orden de mayor a menor es: "+numero1+", "+numero2+", "+numero3+"\n" + 
+				  "Por tanto el mayor es: "+numero1+", y el menor: "+numero3);
+		}else if(numero2 == numero3){
+			alert("Por tanto, el único valor mayor es: "+numero1+", y el menor es: "+numero2);
+		}else{
+			alert("EL orden de mayor a menor es: "+numero1+", "+numero3+", "+numero2+"\n" + 
+				  "Por tanto el mayor es: "+numero1+", y el menor: "+numero2);
+		}
+	}else if(numero1!=numero3){
+		alert("EL orden de mayor a menor es: "+numero3+", "+numero1+", "+numero2+"\n" + 
+			  "Por tanto el mayor es: "+numero3+", y el menor: "+numero2);
+	}else{
+		alert("Por tanto, el único valor mayor es: "+numero1+", y el menor es: "+numero2);
+	}
+}else if(numero2 > numero3){
+	if (numero2 != numero1) {
+		if (numero1 != numero3) {
+			if (numero1 > numero3) {
+				alert("EL orden de mayor a menor es: "+numero2+", "+numero1+", "+numero3+"\n" + 
+					  "Por tanto el mayor es: "+numero2+", y el menor: "+numero3);
+			}else{
+				alert("EL orden de mayor a menor es: "+numero2+", "+numero3+", "+numero1+"\n" + 
+					  "Por tanto el mayor es: "+numero2+", y el menor: "+numero1);
+			}
+		}else{
+			alert("Por tanto, el único valor mayor es: "+numero2+", y el menor es: "+numero3);
+		}
+	}else{
+		alert("Por tanto, el único valor mayor es: "+numero2+", y el menor es: "+numero3);
+	}
+}else if(numero3 == numero1){
+	alert("Los tres números son iguales");
+}else{
+	alert("EL orden de mayor a menor es: "+numero3+", "+numero2+", "+numero1+"\n" + 
+		  "Por tanto el mayor es: "+numero3+", y el menor: "+numero1);
+}

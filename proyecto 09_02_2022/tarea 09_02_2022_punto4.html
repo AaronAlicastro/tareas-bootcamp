@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProducsUp</title>
+</head>
+
+<body>
+    <h1> Sigue los pasos para registrar los productos </h1>
+    <form action="formualario" method="post">
+        <h3> Información del administrador </h3>
+        <label> Nombre del administrador: </label> <input name="nombreAdmin" type="text" width="300px" required=""> <br> <br>
+        <label> Teléfono del administrador: </label> <input name="telAdmin" type="text" width="300px" required=""> <br> <br>
+        <label> correo del administrador: </label> <input name="emailAdmin" type="text" width="300px" required=""> <br>
+
+        <h3> Información del producto </h3>
+        <label> Fecha de ingreso: </label> <input name="fechaIngreso" type="date" required=""> <br> <br>
+        <label> Nombre del producto: </label> <input name="nombreProducto" type="text" width="300px" required=""> <br> <br>
+        <label> código del producto: </label> <input name="codigoProducto" type="text" width="300px" required=""> <br> <br>
+        <label> Valor/precio: </label> <input name="precioProducto" type="number" width="300px" required=""> <br>
+        <h4> Información del producto </h4>
+        <input name="esInversion" type="radio"> Producto de inversión <br>
+        <input name="esConsumo" type="radio"> Producto de consumo  <br> <br>
+        <label> Descripción del producto </label> <br>
+        <textarea name="descripcionProducto" required="" placeholder="Descripción..."></textarea> <br> <br>
+        <label> Descripción del registro </label> <br> <!-- información para el administrador con el fin de llevar un historial-->
+        <textarea name="descripcionRegistro" required="" placeholder="Descripción..."></textarea> <br> <br>
+        <button type="submit"> Registrar </button>
+    </form> <br>
+
+    <h2> Productos registrados </h2>
+    <table border="1px">
+        <tr> <!-- nombre del administrador-->
+            Pedro Barbosa
+        </tr>
+        <tr> <!-- principal -->
+            <td> Cantidad registros </td>
+            <td> ID_producto </td>
+            <td> Fecha de ingreso </td>
+            <td> Nombre del Producto </td>
+            <td> Valor/precio </td>
+            <td> Tipo </td>
+            <td> Descripción del producto </td>
+        </tr>
+        <!-- productos -->
+        <tr>
+            <td> 1 </td>
+            <td> 478354 </td>
+            <td> 07/04/2019 </td>
+            <td> Hamburguesa </td>
+            <td> 8000 $ </td>
+            <td> Consumo </td>
+            <td> Hamburguesa tipo -8 con panes triangulares que contienen 101 ajonjolíes </td>
+        </tr>
+        <tr>
+            <td> 2 </td>
+            <td> $8632475 </td>
+            <td> 07/06/2019 </td>
+            <td> Salchicha </td>
+            <td> 8000.9 $ </td>
+            <td> Consumo </td>
+            <td> Alimento comestible en forma de cilindro comunmente de color rosa, hecho con carne de deinonicos y restos de aves </td>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td> 32_74575 </td>
+            <td> 32/15/2020 </td>
+            <td> Paletas de madera </td>
+            <td> 2000 $ </td>
+            <td> Inversión </td>
+            <td> Pequeña figura de madera importada de Alaska  y poveniente de sus finos robles </td>
+        </tr>
+        <tr>
+            <td> --- </td>
+            <td> --- </td>
+            <td> --- </td>
+            <td> --- </td>
+            <td> --- </td>
+            <td> --- </td>
+            <td> --- </td>
+        </tr>
+    </table>
+</body>
+
+</html>
