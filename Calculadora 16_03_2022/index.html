@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="diseno.css">
+</head>
+
+<body>
+	<div class="bloques">
+		<div id="contenedorCalculadora">
+			<h4 id="resultadoCalculadora"></h4>
+
+			<div id="contenedorBotones">
+				<div id="contenedorBotonesNumeros">
+					<div id="botonesNumerosPosicion1" class="position">
+						<button class="botonesExpresion" id="btn9">9</button>
+						<button class="botonesExpresion" id="btn8">8</button>
+						<button class="botonesExpresion" id="btn7">7</button>
+					</div>
+					<div id="botonesNumerosPosicion2" class="position">
+						<button class="botonesExpresion" id="btn6">6</button>
+						<button class="botonesExpresion" id="btn5">5</button>
+						<button class="botonesExpresion" id="btn4">4</button>
+					</div>
+					<div id="botonesNumerosPosicion3" class="position">
+						<button class="botonesExpresion" id="btn3">3</button>
+						<button class="botonesExpresion" id="btn2">2</button>
+						<button class="botonesExpresion" id="btn1">1</button>
+					</div>
+					<div id="botonesNumerosPosicion4" class="position">
+						<button class="botonesExpresion" id="btn_">.</button>
+						<button class="botonesExpresion" id="btn0">0</button>
+					</div>
+				</div>
+
+				<div id="contenedorBotonesExpresion">
+					<div id="botonesExpresionesPosition1" class="position">
+						<button class="botonesExpresion" id="btnMas">+</button>
+					</div>
+					<div id="botonesExpresionesPosition2" class="position">
+						<button class="botonesExpresion" id="btnDividir">/</button>
+						<button class="botonesExpresion" id="btnMenos">-</button>
+					</div>
+					<div id="botonesExpresionesPosition3" class="position">
+						<button class="botonesExpresion" id="btnX">X</button>
+						<button class="botonesExpresion" id="btnDelete">-d</button>
+					</div>
+					<div id="botonesExpresionesPosition4" class="position">
+						<button class="botonesExpresion" id="btnIgual">=</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contenedorBotonHistorial">
+			<div>
+			<button id="historial">Ver historial</button>
+			</div>
+			<div id="contenedor_txtHistorial">
+				<textarea id="txt_historial"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<div class="bloques">
+		<div id="containerFrase">
+			<div class="laterales">
+				<textarea placeholder="Frase pureba..." id="textoPrueba"></textarea>
+			</div>
+			<div class="laterales">
+				<button id="mayusculas" class="lateralDerecho lateralDerecho_derecho">Mayúsculas</button>
+				<button id="minusculas" class="lateralDerecho lateralDerecho_derecho">Minúsculas</button>
+				<div class="lateralDerecho" id="lateralDerecho_id">
+					<button id="numCaracteres" class="lateralDerechoCaja">¿Cuántas letras tiene?</button>
+					<input type="text" id="txt_numCaracteres" readonly="" class="lateralDerechoCaja">
+				</div>
+				<button id="boton_limpiar" class="lateralDerecho lateralDerecho_derecho">Limpiar</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="control.js"></script>
+</body>
+
+</html>

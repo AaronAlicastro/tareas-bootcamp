@@ -1,0 +1,173 @@
+*{
+	font-family: sans-serif;
+}
+
+body{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#resultadoCalculadora{
+	width: 100%; height: 40px;
+	background: #555;
+	color: #fff;
+	border-top-right-radius: 20%;
+	border: .5px solid #111;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	text-align: center;
+}
+#contenedorResultadocalculadora{
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+.bloques{
+	display: inline-block;
+	width: 50%; height: 100%;
+}
+
+#contenedorCalculadora{
+	width: 30vw;
+	margin: auto;
+	margin-top: 20%;
+	padding: 20px;
+	background: #338812;
+}
+#contenedorBotonHistorial{
+	width: 50vw;
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#historial{
+	background: none;
+	border: 1px solid #f00;
+	font-size: 30px;
+	padding: 10px;
+	margin: 30px;
+}
+#historial:hover{
+	background: #f00;
+	color: #fff;
+}
+#contenedor_txtHistorial{
+	display: none;
+}
+#txt_historial{
+	resize: none;
+	margin: none;
+	background: none;
+	border: none;
+	width: 25vw;
+}
+
+#contenedorBotones{
+	display: flex;
+	flex-direction: row;
+}
+
+#contenedorBotonesNumeros{
+
+}
+#contenedorBotonesExpresion{
+	flex-shrink: 5;
+}
+
+.botonesExpresion{
+	width: 70px; height: 70px;
+	border: none;
+	background: #98dd47;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.botonesExpresion:hover{
+	background: #aaddaa;
+}
+.botonesExpresion:active{
+	color: #f00;
+}
+#btn0{
+	width: 150px;
+}
+#btnMas{
+	width: 150px;
+}
+#btnIgual{
+	width: 150px;
+}
+
+.position{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#containerFrase{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100vw; height: 100vh;
+}
+#textoPrueba{
+	resize: none;
+	width: 25vw; height: 80vh;
+	margin-left: 10px;
+	border-style: none;
+	outline: none;
+	box-shadow: 5px 3px 2px 2px #ddf;
+}
+#textoPrueba:hover{
+	border: .5px solid #aaa;
+	font-size: 30px;
+}
+
+.laterales{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 25vw;
+}
+.lateralDerecho{
+	width: 15vw; height: 10vh;
+	margin: 50px auto;
+	background: #093;
+	color: #005;
+	border-style: none;
+	outline: none;
+	background: linear-gradient(to bottom, #fff, #093);
+}
+.lateralDerecho:hover{
+	background: #fff;
+	font-weight: bold;
+}
+.lateralDerecho_derecho:active{
+	outline: 1px solid #f00;
+}
+
+#lateralDerecho_id{
+	display: flex;
+	flex-direction: column;
+}
+
+.lateralDerechoCaja{
+	height: 25vh;
+	border-style: none;
+	outline: none;
+	background: linear-gradient(to bottom, #fff, #093);
+}
+#numCaracteres:hover{
+	background: #fff;
+	font-weight: bold;
+}
+#numCaracteres:active{
+	background: linear-gradient(to top, #fff, #ddd);
+}
+#txt_numCaracteres{
+	text-align: center;
+}
